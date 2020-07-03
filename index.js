@@ -16,6 +16,7 @@ var links = document.querySelector(".navbar-nav.mr-auto")
 
 
 async function getData(section){
+    navbar.setAttribute("class","navbar-collapse offcanvas-collapse")
     var renderhere = document.getElementById("renderhere")
     renderhere.innerHTML =""
     loadingdiv.style.display = "block";

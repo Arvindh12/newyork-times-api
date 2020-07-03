@@ -1,7 +1,7 @@
 html,
 body {
   overflow-x: hidden; /* Prevent scroll on narrow devices */
-  background-color:#e7dfdd;
+  background-color:#e7dfdd
 }
 
 body {
@@ -28,6 +28,10 @@ body {
     left: 0;
     visibility: visible;
   }
+}
+
+.nav-link{
+    text-align: center;
 }
 
 .nav-scroller {
