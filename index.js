@@ -20,8 +20,13 @@ async function getData(section){
     var renderhere = document.getElementById("renderhere")
     renderhere.innerHTML =""
     loadingdiv.style.display = "block";
+    try{
 var res = await fetch(`https://api.nytimes.com/svc/topstories/v2/${section}.json?api-key=vfcPqAbAa5ZFFDQjga07QSRt8imagCno`)
 var data = await res.json()
+    }
+    catch(err){
+        console.log(err)
+    }
 console.log(data)
 renderDom(data.results)
 }
